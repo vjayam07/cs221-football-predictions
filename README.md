@@ -1,1 +1,1 @@
-# cs221-football-predictions
+# CS 221 Final Project: Scoring with AI!
