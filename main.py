@@ -168,7 +168,8 @@ def train(training_features, training_outputs, validation_features=None, validat
             loss.backward()
             optimizer.step()
 
-        print(f'Epoch {epoch+1}/{num_epochs}, Loss: {loss.item():.4f}')
+        print((epoch+1, loss.item()))
+        # print(f'Epoch {epoch+1}/{num_epochs}, Loss: {loss.item():.4f}')
         
     return model
 
@@ -256,7 +257,7 @@ def main(type):
         
         new_features, upcoming_matches = new_matches(football_database)
         all_predictions, confidence = test(model, new_features)
-        for idx, match in enumerate(test_matches):
+        for idx, match in enumerate(upcoming_matches):
             pred_winner = match[0] if all_predictions[idx] == 0 else match[1]
             print("Match ", idx+1 ,": ", match[0], " v.s. ", match[1])
             print("Predicted Winnner is ", pred_winner, " with ", confidence[idx], "% confidence.")
