@@ -51,8 +51,10 @@ def training_data_init(football_data):
     df_games = pd.read_csv('all_data/scores_fixtures_dataframe.csv')
     training_features = []
     training_outputs = []
-    validation_features = []
-    validation_outputs = []
+    test_features = []
+    test_outputs = []
+
+    test_matches = []
 
     idx = 1
     while idx < df_games.shape[0]:
@@ -83,11 +85,12 @@ def training_data_init(football_data):
             training_outputs.append(np.array([winner]))
             training_features.append(full_vec)
         else:
-            validation_outputs.append(np.array([winner]))
-            validation_features.append(full_vec)
+            test_outputs.append(np.array([winner]))
+            test_features.append(full_vec)
+            test_matches.append((team1, team2))
         idx += 1
         
-    return training_features, training_outputs, validation_features, validation_outputs
+    return training_features, training_outputs, test_features, test_outputs, test_matches
 
 # 2B. BASELINE APPROACH OF MULTIPLICATION OF VALUES
 def compiled_dataset(football_database, encodings):
@@ -149,17 +152,22 @@ def test(model, test_features, test_outputs):
     model.eval()
 
     # Disable gradient calculations
+    all_predictions = np.array([])
     with torch.no_grad():
         correct = 0
         total = 0
         for inputs, labels in test_loader:
             outputs = model(inputs)
             predicted = (outputs > 0.5).float()  # Assuming a threshold of 0.5 for binary classification
+
+            new_predicted = torch.flatten(predicted)
+            all_predictions = np.concatenate((all_predictions, new_predicted.numpy()))
+            
             total += labels.size(0)
             correct += (predicted == labels).sum().item()
-
     accuracy = correct / total
     print(f'Accuracy of the model on the test set: {accuracy:.4f}')
+    return all_predictions
 
 def main(type):
     football_database = database_init()
@@ -174,9 +182,16 @@ def main(type):
 
     
     elif type == "oracle":
-        training_features, training_outputs, test_features, test_outputs = training_data_init(football_database)
+        training_features, training_outputs, test_features, test_outputs, test_matches = training_data_init(football_database)
         model = train(training_features, training_outputs)
-        test(model, test_features, test_outputs)
+        all_predictions = test(model, test_features, test_outputs)
+        for idx, match in enumerate(test_matches):
+            pred_winner = match[0] if all_predictions[idx] == 0 else match[1]
+            true_winner = match[0] if test_outputs[idx] == 0 else match[1]
+            print("Match ", idx ,": ", match[0], " v.s. ", match[1])
+            print("Predicted Winnner is ", pred_winner)
+            print("True Winner is ", true_winner)
+            print("#################################")
 
 
     elif type == "rand":
