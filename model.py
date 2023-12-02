@@ -3,7 +3,7 @@ from torch import nn
 
 class LogisticRegression(nn.Module):
     def __init__(self, input_size):
-        super(LogisticRegression, self).__init__
+        super().__init__()
         self.layer = nn.Linear(input_size, 1)
 
     def forward(self, input):

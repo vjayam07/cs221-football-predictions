@@ -10,4 +10,4 @@ df_games = pd.read_csv('all_data/scores_fixtures_dataframe.csv')
 # for idx in range(1, NUM_TEAMS+1):
 #     football_database[df_games.iloc[idx]['Unnamed: 0_level_0']] = curr
 
-print(df_games.iloc[90])
+print(isinstance(df_games.iloc[90]['Score'], float))
