@@ -4,9 +4,18 @@ Welcome to Scoring with AI, Viraj, Rikhil, and Jacob's final project for CS 221.
 
 ## Dataset Sourcing and Webscraping
 
-We extract all of our data from [FBREF](https://fbref.com/): a free, online database for football players, teams, and matches. To extract data, we use the `pandas` library - this extraction can be found in the `testing` folder of our codebase.
+We extract all of our data from [FBREF](https://fbref.com/): a free, online database for football players, teams, and matches. To extract data, we use the `pandas` library - this extraction can be found in the `testing` folder of our codebase. Because FBREF has a cooldown against data scraping, we initialized our datasets one at a time in the `csv_init.py` file. 
 
-We locally saved our data on a folder labeled `all_data`. However, this free repository could not sustain such memory, so we locally trained our models on a Mac Mini computer.
+We saved our data on a folder labeled `all_data`. Because this free repository could not sustain such memory, we locally trained our models on a Mac Mini computer and did not upload the processed `.csv` files. Here's a list of our initialized datasets as seen in `main.py`:
+
+```
+df_standard = pd.read_csv('all_data/standard_dataframe.csv')
+df_adv_goal = pd.read_csv('all_data/adv_goal_dataframe.csv')
+df_shooting = pd.read_csv('all_data/shooting_dataframe.csv')
+df_passing = pd.read_csv('all_data/passing_dataframe.csv')
+df_defensive = pd.read_csv('all_data/defensive_dataframe.csv')
+df_games = pd.read_csv('all_data/scores_fixtures_dataframe.csv')
+```
 
 ## Model Architecture
 
