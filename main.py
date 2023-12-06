@@ -4,6 +4,9 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 
+import datetime
+import sys
+
 from model import LogisticRegression
 from torch.utils.data import TensorDataset, DataLoader
 
@@ -109,6 +112,7 @@ def compiled_dataset(football_database, encodings):
     baseline_data = {}
     for team_name, stats in football_database.items():
         curr = 1
+        print(stat)
         for idx, stat in enumerate(stats[1]):
             curr += stat * encodings[idx]
         baseline_data[team_name] = curr
@@ -159,6 +163,7 @@ def train(training_features, training_outputs, validation_features=None, validat
 
     # Training loop
     num_epochs = 100
+    print("TRAINING LOOP (epoch, loss):")
     for epoch in range(num_epochs):
         model.train()
         for inputs, labels in dataloader:
@@ -226,9 +231,9 @@ def test(model, test_features, test_outputs=None):
 
     return all_predictions, confidence
 
-def main(type):
+def main(type_name):
     football_database = database_init()
-    if type == "baseline":
+    if type_name == "baseline":
         # encoded positive or negative stats (multiplication for baseline)
         encodings = [1, 1, 1, 1, 1, 1, 1] # weights for linear combination
         baseline_data = compiled_dataset(football_database, encodings)
@@ -238,9 +243,13 @@ def main(type):
             print("Team Name: ", baseline_data[i][0], " Rating: ", baseline_data[i][1])
 
     
-    elif type == "oracle":
+    elif type_name == "oracle":
         training_features, training_outputs, test_features, test_outputs, test_matches = training_data_init(football_database)
         model = train(training_features, training_outputs)
+        
+        print("")
+        print("")
+
         all_predictions, confidence = test(model, test_features, test_outputs=test_outputs)
         for idx, match in enumerate(test_matches):
             pred_winner = match[0] if all_predictions[idx] == 0 else match[1]
@@ -269,4 +278,14 @@ def main(type):
         print("please either input 'baseline' or 'oracle' into the main function.")
 
 if __name__ == "__main__":
-    main("oracle")
+    type_name = "baseline"
+
+    current_time = datetime.datetime.now()
+    filename = "logs/" + str(type_name) + f"_{current_time.strftime('%Y-%m-%d_%H-%M-%S')}.txt"
+    with open(filename, "w") as file:
+        original_stdout = sys.stdout  # Save the original stdout
+        sys.stdout = file  # Redirect stdout to the file
+        main(type_name)
+    sys.stdout = sys.__stdout__
+    print("Output saved in", filename)
+

@@ -1,0 +1,332 @@
+TRAINING LOOP (epoch, loss):
+(1, 0.8697337508201599)
+(2, 0.7756903767585754)
+(3, 0.7191596031188965)
+(4, 0.6852251291275024)
+(5, 0.6646617650985718)
+(6, 0.6520358324050903)
+(7, 0.6441471576690674)
+(8, 0.6391007304191589)
+(9, 0.6357675194740295)
+(10, 0.6334717273712158)
+(11, 0.6318072080612183)
+(12, 0.6305294632911682)
+(13, 0.6294906735420227)
+(14, 0.628600001335144)
+(15, 0.6278039216995239)
+(16, 0.6270681023597717)
+(17, 0.6263721585273743)
+(18, 0.6257035136222839)
+(19, 0.6250536441802979)
+(20, 0.6244177222251892)
+(21, 0.6237921118736267)
+(22, 0.6231746077537537)
+(23, 0.6225643157958984)
+(24, 0.6219592094421387)
+(25, 0.6213589906692505)
+(26, 0.6207631826400757)
+(27, 0.6201711893081665)
+(28, 0.61958247423172)
+(29, 0.6189965605735779)
+(30, 0.6184136271476746)
+(31, 0.6178328990936279)
+(32, 0.6172546744346619)
+(33, 0.6166784167289734)
+(34, 0.6161041855812073)
+(35, 0.6155314445495605)
+(36, 0.6149603128433228)
+(37, 0.6143909692764282)
+(38, 0.6138231158256531)
+(39, 0.6132562160491943)
+(40, 0.6126907467842102)
+(41, 0.612126350402832)
+(42, 0.6115625500679016)
+(43, 0.6109997034072876)
+(44, 0.6104379892349243)
+(45, 0.609877347946167)
+(46, 0.6093168258666992)
+(47, 0.6087570190429688)
+(48, 0.6081977486610413)
+(49, 0.6076388955116272)
+(50, 0.60708087682724)
+(51, 0.606523334980011)
+(52, 0.6059662103652954)
+(53, 0.6054091453552246)
+(54, 0.6048526167869568)
+(55, 0.6042962670326233)
+(56, 0.6037402749061584)
+(57, 0.603184700012207)
+(58, 0.6026293039321899)
+(59, 0.6020745038986206)
+(60, 0.6015195250511169)
+(61, 0.6009647250175476)
+(62, 0.6004103422164917)
+(63, 0.5998561382293701)
+(64, 0.5993020534515381)
+(65, 0.5987481474876404)
+(66, 0.5981943607330322)
+(67, 0.5976406335830688)
+(68, 0.5970873236656189)
+(69, 0.596534013748169)
+(70, 0.5959811210632324)
+(71, 0.5954278707504272)
+(72, 0.5948750972747803)
+(73, 0.5943225622177124)
+(74, 0.5937700271606445)
+(75, 0.5932174921035767)
+(76, 0.5926655530929565)
+(77, 0.5921135544776917)
+(78, 0.591561496257782)
+(79, 0.5910099148750305)
+(80, 0.5904585719108582)
+(81, 0.5899072885513306)
+(82, 0.5893560647964478)
+(83, 0.5888051986694336)
+(84, 0.5882543921470642)
+(85, 0.5877035856246948)
+(86, 0.5871533751487732)
+(87, 0.5866034030914307)
+(88, 0.5860536098480225)
+(89, 0.5855041742324829)
+(90, 0.5849554538726807)
+(91, 0.5844069719314575)
+(92, 0.5838582515716553)
+(93, 0.5833103656768799)
+(94, 0.5827627182006836)
+(95, 0.5822151303291321)
+(96, 0.5816678404808044)
+(97, 0.5811207294464111)
+(98, 0.5805745720863342)
+(99, 0.5800288319587708)
+(100, 0.5794835090637207)
+
+
+Accuracy of the model on the test set: 0.8108
+Match  1 :  sct Celtic  v.s.  es Atlético Madrid
+Predicted Winnner is  es Atlético Madrid  with  60.39062738418579 % confidence.
+True Winner is  es Atlético Madrid
+Correctly Guessed!
+#################################
+Match  2 :  be Antwerp  v.s.  pt Porto
+Predicted Winnner is  pt Porto  with  55.53610324859619 % confidence.
+True Winner is  pt Porto
+Correctly Guessed!
+#################################
+Match  3 :  ch Young Boys  v.s.  eng Manchester City
+Predicted Winnner is  eng Manchester City  with  90.62366485595703 % confidence.
+True Winner is  eng Manchester City
+Correctly Guessed!
+#################################
+Match  4 :  fr Paris S-G  v.s.  it Milan
+Predicted Winnner is  fr Paris S-G  with  28.38364839553833 % confidence.
+True Winner is  fr Paris S-G
+Correctly Guessed!
+#################################
+Match  5 :  de RB Leipzig  v.s.  rs Red Star
+Predicted Winnner is  de RB Leipzig  with  41.25036597251892 % confidence.
+True Winner is  de RB Leipzig
+Correctly Guessed!
+#################################
+Match  6 :  de Dortmund  v.s.  eng Newcastle Utd
+Predicted Winnner is  de Dortmund  with  29.553234577178955 % confidence.
+True Winner is  de Dortmund
+Correctly Guessed!
+#################################
+Match  7 :  ua Shakhtar  v.s.  es Barcelona
+Predicted Winnner is  es Barcelona  with  42.91722774505615 % confidence.
+True Winner is  ua Shakhtar
+#################################
+Match  8 :  pt Porto  v.s.  be Antwerp
+Predicted Winnner is  pt Porto  with  71.43153846263885 % confidence.
+True Winner is  pt Porto
+Correctly Guessed!
+#################################
+Match  9 :  eng Manchester City  v.s.  ch Young Boys
+Predicted Winnner is  eng Manchester City  with  96.85254096984863 % confidence.
+True Winner is  eng Manchester City
+Correctly Guessed!
+#################################
+Match  10 :  es Atlético Madrid  v.s.  sct Celtic
+Predicted Winnner is  es Atlético Madrid  with  71.05008959770203 % confidence.
+True Winner is  es Atlético Madrid
+Correctly Guessed!
+#################################
+Match  11 :  rs Red Star  v.s.  de RB Leipzig
+Predicted Winnner is  de RB Leipzig  with  14.950418472290039 % confidence.
+True Winner is  de RB Leipzig
+Correctly Guessed!
+#################################
+Match  12 :  it Lazio  v.s.  nl Feyenoord
+Predicted Winnner is  nl Feyenoord  with  8.773422241210938 % confidence.
+True Winner is  it Lazio
+#################################
+Match  13 :  it Milan  v.s.  fr Paris S-G
+Predicted Winnner is  fr Paris S-G  with  4.830622673034668 % confidence.
+True Winner is  it Milan
+#################################
+Match  14 :  it Napoli  v.s.  de Union Berlin
+Predicted Winnner is  it Napoli  with  37.45283484458923 % confidence.
+True Winner is  it Napoli
+Correctly Guessed!
+#################################
+Match  15 :  es Real Sociedad  v.s.  pt Benfica
+Predicted Winnner is  es Real Sociedad  with  47.52851128578186 % confidence.
+True Winner is  es Real Sociedad
+Correctly Guessed!
+#################################
+Match  16 :  eng Arsenal  v.s.  es Sevilla
+Predicted Winnner is  eng Arsenal  with  72.35475182533264 % confidence.
+True Winner is  eng Arsenal
+Correctly Guessed!
+#################################
+Match  17 :  es Real Madrid  v.s.  pt Braga
+Predicted Winnner is  es Real Madrid  with  85.42971014976501 % confidence.
+True Winner is  es Real Madrid
+Correctly Guessed!
+#################################
+Match  18 :  at RB Salzburg  v.s.  it Inter
+Predicted Winnner is  it Inter  with  50.44831037521362 % confidence.
+True Winner is  it Inter
+Correctly Guessed!
+#################################
+Match  19 :  nl PSV Eindhoven  v.s.  fr Lens
+Predicted Winnner is  nl PSV Eindhoven  with  52.02011168003082 % confidence.
+True Winner is  nl PSV Eindhoven
+Correctly Guessed!
+#################################
+Match  20 :  de Bayern Munich  v.s.  tr Galatasaray
+Predicted Winnner is  de Bayern Munich  with  37.08302974700928 % confidence.
+True Winner is  de Bayern Munich
+Correctly Guessed!
+#################################
+Match  21 :  dk FC Copenhagen  v.s.  eng Manchester Utd
+Predicted Winnner is  eng Manchester Utd  with  32.802391052246094 % confidence.
+True Winner is  dk FC Copenhagen
+#################################
+Match  22 :  it Lazio  v.s.  sct Celtic
+Predicted Winnner is  it Lazio  with  50.04361569881439 % confidence.
+True Winner is  it Lazio
+Correctly Guessed!
+#################################
+Match  23 :  ua Shakhtar  v.s.  be Antwerp
+Predicted Winnner is  ua Shakhtar  with  40.94884395599365 % confidence.
+True Winner is  ua Shakhtar
+Correctly Guessed!
+#################################
+Match  24 :  eng Manchester City  v.s.  de RB Leipzig
+Predicted Winnner is  eng Manchester City  with  89.72074091434479 % confidence.
+True Winner is  eng Manchester City
+Correctly Guessed!
+#################################
+Match  25 :  it Milan  v.s.  de Dortmund
+Predicted Winnner is  it Milan  with  30.746078491210938 % confidence.
+True Winner is  de Dortmund
+#################################
+Match  26 :  fr Paris S-G  v.s.  eng Newcastle Utd
+Predicted Winnner is  fr Paris S-G  with  58.81136953830719 % confidence.
+True Winner is  fr Paris S-G
+Correctly Guessed!
+#################################
+Match  27 :  ch Young Boys  v.s.  rs Red Star
+Predicted Winnner is  rs Red Star  with  27.751445770263672 % confidence.
+True Winner is  ch Young Boys
+#################################
+Match  28 :  es Barcelona  v.s.  pt Porto
+Predicted Winnner is  es Barcelona  with  41.49869680404663 % confidence.
+True Winner is  es Barcelona
+Correctly Guessed!
+#################################
+Match  29 :  nl Feyenoord  v.s.  es Atlético Madrid
+Predicted Winnner is  nl Feyenoord  with  7.172250747680664 % confidence.
+True Winner is  es Atlético Madrid
+#################################
+Match  30 :  es Sevilla  v.s.  nl PSV Eindhoven
+Predicted Winnner is  nl PSV Eindhoven  with  34.557437896728516 % confidence.
+True Winner is  nl PSV Eindhoven
+Correctly Guessed!
+#################################
+Match  31 :  pt Benfica  v.s.  it Inter
+Predicted Winnner is  it Inter  with  31.90929889678955 % confidence.
+True Winner is  it Inter
+Correctly Guessed!
+#################################
+Match  32 :  eng Arsenal  v.s.  fr Lens
+Predicted Winnner is  eng Arsenal  with  73.09589385986328 % confidence.
+True Winner is  eng Arsenal
+Correctly Guessed!
+#################################
+Match  33 :  pt Braga  v.s.  de Union Berlin
+Predicted Winnner is  pt Braga  with  18.15347671508789 % confidence.
+True Winner is  pt Braga
+Correctly Guessed!
+#################################
+Match  34 :  tr Galatasaray  v.s.  eng Manchester Utd
+Predicted Winnner is  eng Manchester Utd  with  15.80573320388794 % confidence.
+True Winner is  eng Manchester Utd
+Correctly Guessed!
+#################################
+Match  35 :  es Real Madrid  v.s.  it Napoli
+Predicted Winnner is  es Real Madrid  with  82.24434852600098 % confidence.
+True Winner is  es Real Madrid
+Correctly Guessed!
+#################################
+Match  36 :  de Bayern Munich  v.s.  dk FC Copenhagen
+Predicted Winnner is  de Bayern Munich  with  50.704553723335266 % confidence.
+True Winner is  de Bayern Munich
+Correctly Guessed!
+#################################
+Match  37 :  es Real Sociedad  v.s.  at RB Salzburg
+Predicted Winnner is  es Real Sociedad  with  57.179757952690125 % confidence.
+True Winner is  es Real Sociedad
+Correctly Guessed!
+#################################
+
+
+Match  1 :  fr Lens  v.s.  es Sevilla
+Predicted Winnner is  es Sevilla  with  3.7370920181274414 % confidence.
+#################################
+Match  2 :  nl PSV Eindhoven  v.s.  eng Arsenal
+Predicted Winnner is  eng Arsenal  with  14.13729190826416 % confidence.
+#################################
+Match  3 :  eng Manchester Utd  v.s.  de Bayern Munich
+Predicted Winnner is  eng Manchester Utd  with  18.379157781600952 % confidence.
+#################################
+Match  4 :  it Inter  v.s.  es Real Sociedad
+Predicted Winnner is  it Inter  with  19.136935472488403 % confidence.
+#################################
+Match  5 :  at RB Salzburg  v.s.  pt Benfica
+Predicted Winnner is  pt Benfica  with  10.630214214324951 % confidence.
+#################################
+Match  6 :  it Napoli  v.s.  pt Braga
+Predicted Winnner is  it Napoli  with  18.182992935180664 % confidence.
+#################################
+Match  7 :  dk FC Copenhagen  v.s.  tr Galatasaray
+Predicted Winnner is  tr Galatasaray  with  8.005249500274658 % confidence.
+#################################
+Match  8 :  de Union Berlin  v.s.  es Real Madrid
+Predicted Winnner is  es Real Madrid  with  82.83207416534424 % confidence.
+#################################
+Match  9 :  de RB Leipzig  v.s.  ch Young Boys
+Predicted Winnner is  de RB Leipzig  with  66.02104902267456 % confidence.
+#################################
+Match  10 :  rs Red Star  v.s.  eng Manchester City
+Predicted Winnner is  eng Manchester City  with  80.6189775466919 % confidence.
+#################################
+Match  11 :  eng Newcastle Utd  v.s.  it Milan
+Predicted Winnner is  it Milan  with  28.191804885864258 % confidence.
+#################################
+Match  12 :  pt Porto  v.s.  ua Shakhtar
+Predicted Winnner is  pt Porto  with  49.63265657424927 % confidence.
+#################################
+Match  13 :  sct Celtic  v.s.  nl Feyenoord
+Predicted Winnner is  nl Feyenoord  with  57.06294775009155 % confidence.
+#################################
+Match  14 :  de Dortmund  v.s.  fr Paris S-G
+Predicted Winnner is  fr Paris S-G  with  26.955711841583252 % confidence.
+#################################
+Match  15 :  be Antwerp  v.s.  es Barcelona
+Predicted Winnner is  es Barcelona  with  71.13957405090332 % confidence.
+#################################
+Match  16 :  es Atlético Madrid  v.s.  it Lazio
+Predicted Winnner is  es Atlético Madrid  with  37.76867389678955 % confidence.
+#################################
